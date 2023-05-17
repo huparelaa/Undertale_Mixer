@@ -19,9 +19,9 @@ Additionally, you need to install ffmpeg. Please refer to the following tutorial
 python main.py
 ```
 3. The application will open in fullscreen mode and display the Undertale Music Mixer interface.
-4. Select two songs from the dropdown menus and click on the "Create Mix" button to create a mix of the selected songs.
+4. Select two songs from the dropdown menus and click on the "DO MIX" button to create a mix of the selected songs.
 5. Once the mix is created, you can click on the "Play Mix" button to listen to the mixed song.
-6. Use the "Stop Playback" button to stop the playback of the mixed song.
+6. Use the "Stop song" button to stop the playback of the mixed song.
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, please feel free to contribute to this project.
