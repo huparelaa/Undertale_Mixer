@@ -25,7 +25,7 @@ def crear_mix():
     cancion2 = combo_cancion2.get()
 
     if cancion1 and cancion2:  # Verificar si se seleccionaron dos canciones
-        boton_crear_mix.config(text="Creando canción", state="disabled", fg="white")
+        boton_crear_mix.config(text="Mixing...", state="disabled", fg="white")
         ventana.update()
 
         mezcla = mixer.mix(cancion1, cancion2)
@@ -37,10 +37,10 @@ def crear_mix():
 
         rutas["mezclas"]=ruta_mezcla
 
-        boton_crear_mix.config(text="Crear mix", state="normal", fg="white")
-        messagebox.showinfo("Mix creado", "Se ha creado el mix de las canciones.")
+        boton_crear_mix.config(text="Do mix", state="normal", fg="white")
+        messagebox.showinfo("Mix creado", "Mix has been created")
     else:
-        messagebox.showwarning("Advertencia", "Selecciona dos canciones a mixear.")
+        messagebox.showwarning("Alert", "Select two songs to mix")
 
 def reproducir_mix(ruta_mix):
     pygame.mixer.music.load(rutas["mezclas"])

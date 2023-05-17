@@ -1,5 +1,4 @@
 from pydub import AudioSegment
-import os
 pistas = {"Megalovania":"Pistas//Megalovania.mp3",
           "Hopes and dreams":"Pistas//Hopes_and_dreams.mp3",
           "Asgore":"Pistas//Asgore.mp3",
@@ -22,5 +21,3 @@ def mix(cancion1,cancion2):
         mezcla = pista1.overlay(pista2)
 
     return mezcla
-    #Exportar la mezcla
-    mezcla.export("Mezcla.mp3", format='mp3')
